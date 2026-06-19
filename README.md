@@ -80,12 +80,14 @@ npm run dev
 
 # Terminal 2 - Frontend
 cd frontend
-npm start
+npm run dev
 ```
 
 5. **Access the application**
-- Frontend: http://localhost:3000
+- Frontend: Vite prints the exact preview URL, usually http://localhost:5173
 - Backend API: http://localhost:5000
+
+> If you are running this in a container or cloud workspace, use the forwarded port URL for port `5173` instead of `127.0.0.1`. The frontend dev and preview scripts bind to `0.0.0.0` so those forwarded URLs can connect.
 
 ## Project Structure
 
